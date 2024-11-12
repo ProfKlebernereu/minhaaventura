@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Em busca do tesouro</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/mapa-de-tesouro.png" alt="um mapa de papelque mostra uma ilha com um x no centro">
+            <p>Um dia desses andando pela rua encontrei um mapa que mostrava pistas para encontrar um tesouro perdido. Nesse mapa, um desconhecido deixa algumas pistas para encontrar um tesouro e eu decidi procurá-lo!</p>
+            <button class ="btn-proximo" data-proximo="1">Jóias</button>
+            <button class="btn-proximo" data-proximo="2">Dinheiro</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Você começa sua jornada em alto mar sentido para um lugar ao Norte, bem distante da praia.</p>
+            <button class="btn-proximo" data-proximo="3">Procurar a pista numa ilha isolada</button>
+            <button class="btn-proximo" data-proximo="4">Desistir e voltar para casa</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Em dinheiro, você precisa encontrar uma mala. No mapa, uma das pistas indica que para localizar a mala você deve procurar a próxima pista em um dos coqueiros que se encontram na ilha.Qual você escolhe primeiro?</p>
+            <button class="btn-proximo" data-proximo="5">O coqueiro da parte superior direita do X</button>
+            <button class="btn-proximo" data-proximo="6">O coqueiro da parte superior esquerda do X</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>Chegando na ilha vc encontra uma pista indicando a entrada de uma caverna</p>
+            <button class="btn-proximo" data-proximo="7">Seguir para a Caverna</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="img/favela.jpeg" alt="imagem voltando para casa e desitindo da aventura">
+            <p>Você decide que essa viagem seria arriscada demais e volta para casa, mas sempre se pergunta o que teria encontrado.</p>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>No coqueiro a direita vc encontra uma pista indicando que precisa seguir a caverna que está a sua frente.</p>
+            <button class="btn-proximo" data-proximo="7">Seguir a caverna</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>No coqueiro a esquerda vc encontra uma pista indicando que deve andar 10km na margem da praia</p>
+            <button class="btn-proximo" data-proximo="8">Chegando no final da praia encontra uma pedra que indica que deve voltar para o coqueiro à direita do x</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>Entrando na caverna, a busca pelo tesouro se intensifica. Você se depara com um labirinto com uma entrada a esquerda e outra a direita.</p>
+            <button class="btn-proximo" data-proximo="9">Seguir pela entrada à esquerda</button>
+            <button class="btn-proximo" data-proximo="10">Seguir pela entrada à direita</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>De volta ao coqueiro à direita do x você finalmente encontra a pista que leva a caverna</p>
+            <button class="btn-proximo" data-proximo="7">Seguir caverna</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>A passagem à esquerda leva você a uma  sala  escondida com  vários esqueletos amontoados uns sobre os outros e no final uma porta enorme fechada.</p>
+            <button class="btn-proximo" data-proximo="11">Abrir a porta</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>A passagem  à direita  leva a um caminho muito longo que acaba por dar a uma passagem sem saída.</p>
+            <button class="btn-proximo" data-proximo="12">Retornar e tentar a outra 
+                passagem</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <img src="img/bau-cheio- de-joias.png" alt="">
+            <p>Empurrando a porta vc encontra um baú enorme fechado e abrindo-o vê inumeras  jóias e ao perceber nota quea porta  se fecha.</p>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <p>Retornando a passagem  à esquerda, você finalmente encontra o baú.</p>
+            <button class="btn-proximo" data-proximo="11">Explorar a cidade perdida</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
